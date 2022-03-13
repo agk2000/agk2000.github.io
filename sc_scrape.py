@@ -1,7 +1,7 @@
 import json
 
 lines = []
-with open('/Users/anish/Documents/anish/wordle/taylorswift.txt') as f:
+with open('/Users/anish/Documents/anish/wordle/speaknow.txt') as f:
     lines = f.readlines()
 
 title_list = []

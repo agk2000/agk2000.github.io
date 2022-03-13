@@ -1,7 +1,7 @@
 import json
 
 lines = []
-with open('/Users/anish/Documents/anish/wordle/red.txt') as f:
+with open('/Users/anish/Documents/anish/wordle/evermore.txt') as f:
     lines = f.readlines()
 
 title_list = []
@@ -12,8 +12,8 @@ for line in lines:
         count += 1
         line = line.replace("\"", "@")
         arr = line.split(" ")
-        #new_url_suffix = arr[3].split("?")[0].split("@")[1]
-        new_url_suffix = arr[5].split("?")[0].split("@")[1]
+        new_url_suffix = arr[3].split("?")[0].split("@")[1]
+        #new_url_suffix = arr[5].split("?")[0].split("@")[1]
         new_url = "https://soundcloud.com" + new_url_suffix
         new_title = "Taylor Swift - " + line.split("@>")[1].split("<")[0]
         #print(f'line {count}: {new_url}; {new_title}')   
